@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un Don - DIEF</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="Images/logo blanc.png" type="image/x-icon">
+    <script src="dief.js"></script>
+</head>
+<body class="page-don">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Images/logo blanc.png" alt="DIEF Logo">
+            </div>
+            <div class="burger" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À Propos</a></li>
+                    <li><a href="action.html">Nos Actions</a></li>
+                    <li><a href="don.html">Faire un Don</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="actualités.html">Actualités</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Faire un don</h1>
+        </section>
+        <section class="content-section">
+            <h2>Soutenez notre action</h2>
+            <p>Votre don sauve des vies.</p>
+            <a href="#donationForm" class="btn">Je donne</a>
+        </section>
+
+        <section class="content-section container section-animate">
+            <h2>Votre générosité fait la différence</h2>
+            <p>Chaque contribution, grande ou petite, aide DIEF à poursuivre sa mission de protection, d'accompagnement et d'autonomisation des femmes et des enfants en RD Congo.</p>
+            <p>Grâce à votre soutien, nous pouvons :</p>
+
+            <ul>
+                <li>Offrir une meilleure éducation et protection aux enfants.</li>
+                <li>Soutenir les femmes dans leurs activités économiques et leur autonomisation.</li>
+                <li>Améliorer l'accès à l'eau, à l'hygiène et à l'assainissement dans les communautés.</li>
+                <li>Lutter contre la malnutrition chez les enfants et les femmes enceintes/ allaitantes.</li>
+                <li>Intervenir en cas de catastrophes naturelles et de conflits pour protéger les populations vulnérables.</li>
+            </ul>
+
+            <div class="donation-form-container">
+                <h3>Effectuer un Don</h3>
+                <p>Veuillez choisir le montant de votre don ou entrer un montant personnalisé.</p>
+                <form id="donationForm">
+                    <div class="amount-options">
+                        <button type="button" class="amount-btn" data-amount="10">$10</button>
+                        <button type="button" class="amount-btn" data-amount="25">$25</button>
+                        <button type="button" class="amount-btn" data-amount="50">$50</button>
+                        <button type="button" class="amount-btn" data-amount="100">$100</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="customAmount">Ou un autre montant ($):</label>
+                        <input type="number" id="customAmount" name="customAmount" min="1" placeholder="Ex: 75">
+                    </div>
+                    <div class="form-group">
+                        <label for="fullName">Nom complet :</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Méthode de paiement :</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Sélectionner une méthode</option>
+                            <option value="bank_transfer">Virement bancaire</option>
+                            <option value="mobile_money">Mobile Money (M-Pesa, Orange Money, Airtel Money,Afrimoney.)</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Donner maintenant</button>
+                    <p id="donationMessage" class="message"></p>
+                </form>
+                <p class="note">
+                    Merci pour votre soutien.
+                </p>
+            </div>
+        </section>
+
+        <div class="animated-circles">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+        </div>
+        <div class="scroll-line"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>À Propos de DIEF</h3>
+                    <p>Développement Intégral de l’Enfant et de la Femme (DIEF-RDC) est une association dédiée à la promotion et la protection des droits humains en RD Congo.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="apropos.html">À Propos</a></li>
+                        <li><a href="action.html">Nos Actions</a></li>
+                        <li><a href="don.html">Faire un Don</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions.html">Mentions légales</a></li>
+                        <li><a href="politique.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contactez-nous</h3>
+                    <p>Email : <a href="mailto:info@dief-rdc.org">info@dief-rdc.org</a></p>
+                    <p>Téléphone : <a href="tel:+243974655799">+243 974 655 799</a>, <a href="tel:+243820078900">820 078 900</a></p>
+                    <p>Adresse : Bukavu, Nguba, Nyalukemba ,De la montagne, RDC</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CFbZVwZkz/?mibextid=wwXlfr" aria-label="Facebook DIEF"><img src="Images/icons8-facebook-logo.svg" alt="Facebook" width="24"></a>
+                        <a href="#" aria-label="Twitter DIEF"><img src="Images/icons8-x.svg" alt="Twitter" width="24"></a>
+                        <a href="https://www.instagram.com/diefrdc?igsh=dTE1ZXZ2aHI6dXp2&ut_source=ar" aria-label="Instagram DIEF"><img src="Images/icons8-instagram.svg" alt="Instagram" width="24"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 DIEF-RDC. Tous droits réservés. by JakaDev
+            </div>
+        </div>
+    </footer>
+    <div id="lightbox-overlay" style="display:none; position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;z-index:99999;cursor:zoom-out;">
+    <img id="lightbox-img" src="" alt="" style="max-width:96vw;max-height:90vh;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.25);">
+</div>
+
+</body>
+</html>
